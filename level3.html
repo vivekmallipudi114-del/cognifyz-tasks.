@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3 - Landing Page & Gallery</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #fafafa; color: #333; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 20px; text-align: center; }
+        .section { padding: 30px 20px; max-width: 800px; margin: auto; }
+        .cta-btn { display: inline-block; background: #ff758c; color: white; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 15px; }
+        
+        /* Auto CSS Slideshow Engine */
+        .slider-frame { width: 100%; max-width: 500px; height: 250px; margin: 20px auto; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .slide-images { width: 300%; height: 250px; display: flex; animation: slideAnimation 9s infinite; }
+        .img-container { width: 100%; height: 250px; }
+        .img-container img { width: 100%; height: 100%; object-fit: cover; }
+        @keyframes slideAnimation {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(0); }
+            38% { transform: translateX(-33.33%); }
+            66% { transform: translateX(-33.33%); }
+            71% { transform: translateX(-66.66%); }
+            100% { transform: translateX(-66.66%); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Web Developer Internship</h1>
+        <p>Cognifyz Technologies Opportunities</p>
+        <a href="#apply" class="cta-btn">Apply Now</a>
+    </div>
+
+    <!-- Image Slideshow Task -->
+    <div class="section" style="text-align: center;">
+        <h3>Automated Work Presentation Slideshow</h3>
+        <div class="slider-frame">
+            <div class="slide-images">
+                <div class="img-container"><img src="https://picsum.photos/500/250?random=11" alt="Gallery 1"></div>
+                <div class="img-container"><img src="https://picsum.photos/500/250?random=12" alt="Gallery 2"></div>
+                <div class="img-container"><img src="https://picsum.photos/500/250?random=13" alt="Gallery 3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Overview Landing Page Data -->
+    <div class="section">
+        <h3>Program Guidelines & Information</h3>
+        <ul>
+            <li><strong>Duration:</strong> 1-Month Practical Stint</li>
+            <li><strong>Key Benefits:</strong> Mentorship, real-world framework experience, dynamic resume documentation</li>
+            <li><strong>Qualifications:</strong> Basic understanding of foundational internet systems (HTML/CSS/JS)</li>
+        </ul>
+        <hr>
+        <h4>Contact Inquiries</h4>
+        <p>Email: info@cognifyz.com | Site: www.cognifyz.com</p>
+    </div>
+
+</body>
+</html>
